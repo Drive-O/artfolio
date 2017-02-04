@@ -1,0 +1,77 @@
+.left-container{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  background: $dark;
+  padding: 1.2rem;
+  color: #fff;
+  font-weight: 100;
+  @mixin mediumDevice{
+    width: 20%;
+  }
+  &__person{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: -5rem;
+    &__img{
+      &__hex{
+        width: 200px;
+        background: #fff;
+        height: 400px;
+        transform: rotate(120deg);
+        overflow: hidden;
+        visibility: hidden;
+        &__hex1{
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          transform: rotate(-60deg);
+          &__hex2{
+            width: 100%;
+            height: 100%;
+            transform: rotate(-60deg);
+            background: #fff;
+            visibility: visible;
+            background: url('http://lorempixel.com/g/250/350/people');
+            repeat: no-repeat;
+            position: 50%;
+          }
+        }
+      }
+    }
+    &__info{
+      margin-top: -5rem;
+      &__name{
+        font-weight: 400;
+        font-size: 2rem;
+        display: block;
+        margin-bottom: -0.5rem;
+      }
+      &__job{
+        font-size: 1.3rem;
+      }
+    }
+  }
+  &__describtion{
+    margin-top: 2rem;
+    &__profile{
+      &__hl{
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+      &__line{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+      }
+      &__p{
+        font-size: 0.9rem;
+        padding: 0.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@define-mixin smallDevice{
+  @media(min-width: 480px){
+    @mixin-content;
+  }
+}
+@define-mixin mediumDevice{
+  @media(min-width: 920px){
+    @mixin-content;
+  }
+}
+@define-mixin largeDevice{
+  @media(min-width: 1200px){
+    @mixin-content;
+  }
+}

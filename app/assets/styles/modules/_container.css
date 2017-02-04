@@ -1,0 +1,14 @@
+.container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Open Sans', sans-serif;
+  @mixin largeDevice{
+
+  }
+  @mixin mediumDevice{
+    flex-flow: row nowrap;
+    height: 100vh;
+  }
+}

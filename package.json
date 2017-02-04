@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Drive-O/artfolio#readme",
   "devDependencies": {
-    "autoprefix": "^1.0.1",
+    "autoprefixer": "^6.7.2",
     "browser-sync": "^2.18.7",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.3.0",
