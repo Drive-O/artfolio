@@ -1,0 +1,31 @@
+{
+  "name": "artfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drive-O/artfolio.git"
+  },
+  "author": "Philipp Rost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drive-O/artfolio/issues"
+  },
+  "homepage": "https://github.com/Drive-O/artfolio#readme",
+  "devDependencies": {
+    "autoprefix": "^1.0.1",
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-watch": "^4.3.11",
+    "normalize.css": "^5.0.0",
+    "postcss-import": "^9.1.0",
+    "postcss-mixins": "^5.4.1",
+    "postcss-nesting": "^2.3.1",
+    "postcss-simple-vars": "^3.0.0"
+  }
+}
