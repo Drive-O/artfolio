@@ -1,9 +1,273 @@
 .right-container{
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   width: 100%;
-  @mixin mediumDevice{
-    width: 80%;
+  background: $grey;
+  overflow: hidden;
+  &__exp{
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+    &__hl{
+      font-weight: 600;
+      font-size: 2rem;
+      text-transform: uppercase;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+    &__list{
+      margin: 0;
+      padding: 0;
+      &__li{
+          margin-left: 1.2rem;
+          margin-top: 0.2rem;
+          font-weight: 600;
+          line-height: 1.2rem;
+      }
+      &__li span{
+        font-weight: 100;
+      }
+      &__li:nth-child(1){
+        margin-top: 1.2rem;
+      }
+    }
   }
+  &__skills{
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    &__hl{
+      display: flex;
+      flex-flow: row nowrap;
+      &__h1{
+        font-weight: 600;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+    }
+    &__lists{
+      display: flex;
+      flex-flow: column nowrap;
+      margin-top: 1.2rem;
+      margin-left: 1.2rem;
+      font-weight: 400;
+      width: 80%;
+      @mixin mediumDevice{
+        flex-flow: row nowrap;
+      }
+      &__list-left{
+        &__progressbar{
+          width: 200px;
+          height: 15px;
+          border: 1px solid $dark;
+          display: block;
+          float:right;
+          border-radius: 10px;
+          margin-left: 1.2rem;
+          &__progress-html{
+            height:100%;
+            background: $dark;
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+          }
+          &__progress-css{
+            height:100%;
+            background: $dark;
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+          }
+          &__progress-javascript{
+            height:100%;
+            background: $dark;
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+          }
+          &__progress-python{
+            height:100%;
+            background: $dark;
+            width: 75%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            display: block;
+          }
+        }
+      }
+      &__list-right{
+        margin-left: 0;
+        @mixin mediumDevice{
+            margin-left: 5rem;
+        }
+        &__progressbar{
+            width: 200px;
+            height: 15px;
+            border: 1px solid $dark;
+            display: block;
+            float:right;
+            border-radius: 10px;
+            margin-left: 1.2rem;
+
+            &__progress-gulp{
+              height:100%;
+              background: $dark;
+              width: 90%;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              display: block;
+            }
+            &__progress-node{
+              height:100%;
+              background: $dark;
+              width: 50%;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              display: block;
+            }
+            &__progress-git{
+              height:100%;
+              background: $dark;
+              width: 90%;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              display: block;
+            }
+            &__progress-scss{
+              height:100%;
+              background: $dark;
+              width: 90%;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              display: block;
+            }
+        }
+      }
+    }
+    &__lists li{
+      margin-top: 0.5rem;
+    }
+  }
+  &__lang{
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    &__hl{
+      display: flex;
+      flex-flow: row nowrap;
+      &__h1{
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    &__list{
+      margin-top: 1.2rem;
+      margin-left: 1.2rem;
+      &__ul{
+        display: flex;
+        flex-flow: row wrap;
+        &__progressbar{
+          width: 200px;
+          height: 15px;
+          border: 1px solid $dark;
+          display: block;
+          float:right;
+          border-radius: 10px;
+          margin-left: 1.2rem;
+          &__progress-en{
+            height:100%;
+            background: $dark;
+            width: 90%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            display: block;
+          }
+          &__progress-ge{
+            height:100%;
+            background: $dark;
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+          }
+          &__progress-fr{
+            height:100%;
+            background: $dark;
+            width: 30%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            display: block;
+          }
+        }
+      }
+      &__ul li:nth-child(1){
+        margin-left: 0;
+      }
+      &__ul li{
+        @mixin mediumDevice{
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+  &__hobbies{
+    margin-left: 1.2rem;
+    margin-top: 2rem;
+    &__hl{
+      display: flex;
+      flex-flow: row nowrap;
+      &__h1{
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    &__list{
+      margin-left: 0.2rem;
+      margin-top: 1.2rem;
+      &__ul{
+        display: flex;
+        flex-flow: row wrap;
+        &__draw:before{
+          background: url('../../assets/images/pen.png') no-repeat;
+          content: " ";
+          padding: 20px;
+          background-position: center;
+        }
+        &__trav:before{
+          background: url('../../assets/images/world.png') no-repeat;
+          content: " ";
+          padding: 20px;
+          background-position: center;
+        }
+        &__cook:before{
+          background: url('../../assets/images/food.png') no-repeat;
+          content: " ";
+          padding: 20px;
+          background-position: center;
+        }
+        &__prog:before{
+          background: url('../../assets/images/code.png') no-repeat;
+          content: " ";
+          padding: 20px;
+          background-position: center;
+        }
+      }
+    }
+    &__list ul li{
+      list-style: none;
+      font-size: 1.2rem;
+      font-weight: 100;
+      margin-left: 1.5rem;
+
+    }
+    &__list ul li:nth-child(1){
+      margin-left: 0;
+    }
+  }
+}
+.line-right{
+  float: right;
+  height: 2px;
+  width: 100%;
+  margin-left: 1.4rem;
+  margin-top: 17px;
+  background: $dark;
 }
